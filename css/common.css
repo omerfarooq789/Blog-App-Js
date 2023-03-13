@@ -1,0 +1,12 @@
+#my-posts,
+#add-posts {
+  cursor: pointer;
+}
+#cont {
+  width: 90%;
+  margin: 0 auto;
+}
+#nav-hidden,
+#signOut-btn {
+  display: none;
+}

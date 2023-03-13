@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-body-secondary" data-bs-theme="dark">
+      <div class="container flex-column flex-md-row">
+        <a class="navbar-brand" onclick="route()" id="logo" href="/"
+          >Blog App</a
+        >
+        <ul class="navbar-nav flex-row" id="nav-hidden">
+          <li class="nav-item me-1">
+            <a class="nav-link active" onclick="route()" id="home" href="/"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item me-1">
+            <a class="nav-link" onclick="route()" id="my-blog" href="/My_Blogs"
+              >My Blogs</a
+            >
+          </li>
+          <li class="nav-item me-1">
+            <a
+              class="nav-link"
+              onclick="route()"
+              id="add-blog"
+              href="/Add_Blogs"
+              >Add Post</a
+            >
+          </li>
+        </ul>
+        <div>
+          <button
+            class="btn btn-primary me-2"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#signInModal"
+            id="signIn-btn"
+          >
+            Sign In <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </button>
+          <button
+            class="btn btn-primary me-2"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#signUpModal"
+            id="signUp-btn"
+          >
+            Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i>
+          </button>
+          <button class="btn btn-primary" id="signOut-btn" type="button">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="content"></div>
+
+    <script src="js/routes.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

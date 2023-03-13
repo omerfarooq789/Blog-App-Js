@@ -1,0 +1,145 @@
+<!-- Sign In Modal -->
+<div class="modal fade" id="signInModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Sign In</h1>
+        <button
+          type="button"
+          class="btn-close"
+          id="signIn-close"
+          data-bs-dismiss="modal"
+          data-bs-target="signInModal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form class="text-center" id="signInForm" novalidate>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              required
+            />
+            <label for="email">Email address</label>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              name="pswd"
+              class="form-control"
+              id="pswd"
+              required
+            />
+            <label for="pswd">Password</label>
+            <div class="invalid-feedback"></div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="signIn-bbtn">
+            Sign In
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        Do you want to
+        <a id="alt-singUp" class="link link-primary modal-bttn">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Sign Up</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          id="signUp-close"
+          data-bs-target="signUpModal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form class="text-center needs-validation" id="signUpForm" novalidate>
+          <div id="hidden-form">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="first-name"
+                required
+              />
+              <label for="fname">First Name</label>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="last-name"
+                required
+              />
+              <label for="lname">Last Name</label>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                name="pswd"
+                id="spswd"
+                required
+              />
+              <label for="spswd">Password</label>
+              <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                name="pswd"
+                id="cpswd"
+                required
+              />
+              <label for="cpswd">Confirm Password</label>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div id="email-form">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="semail"
+                required
+              />
+              <label for="semail">Email address</label>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
+          <button type="submit" id="signupbtn" class="btn btn-primary">
+            Next
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        Do you want to
+        <a id="alt-singIn" class="link link-primary modal-bttn">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid pt-5 pb-5">
+  <div id="cont">
+    <div class="row g-3" id="blog-posts"></div>
+  </div>
+</div>
